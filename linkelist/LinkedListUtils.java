@@ -1,6 +1,3 @@
-
-
-import java.util.Iterator;
 import java.util.LinkedList;
 
 /*
@@ -53,17 +50,8 @@ public class LinkedListUtils {
     }
 
     public static boolean containsSubsequence(LinkedList<Integer> one, LinkedList<Integer> two) {
+//        LinkedList<Integer> cloneOne = (LinkedList<Integer>) one.clone();
 
-        int sizeLimitTwo = 0;
-        int sizeLimitOne = 0;
-        while (sizeLimitOne < one.size()) {
-            if (one.get(sizeLimitOne).equals(two.get(sizeLimitTwo))) {
-                sizeLimitOne++;
-                sizeLimitTwo++;
-            } else {
-                sizeLimitTwo = 0;
-            }
-        }
         return true; // this line is here only so this code will compile if you don't modify it
     }
 
@@ -79,9 +67,9 @@ public class LinkedListUtils {
         linkedlist.add(8);
 
         LinkedList<Integer> two = new LinkedList<>();
-        two.add(3);
-        two.add(4);
-        two.add(5);
+//        two.add(3);
+//        two.add(4);
+//        two.add(5);
 
         LinkedListUtils.containsSubsequence(linkedlist, two);
 //        LinkedListUtils.insertSorted(linkedlist, 4);
@@ -89,9 +77,9 @@ public class LinkedListUtils {
 //        LinkedList<String> list = new LinkedList<>();
 //        list.add("hola");
 //        list.add("mundo");
-//        list.add("todo");
+//        list.add("todos");
 //        list.add("esta");
-//        list.add("todo");
+//        list.add("todos");
 //        list.add("mundo");
 //        LinkedListUtils.removeMaximumValues(list, 4);
     }
